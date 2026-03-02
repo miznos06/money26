@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>資産形成ブログ</h1>
+      <h1>資産形成の実践</h1>
 
       <h2>カテゴリ一覧</h2>
       {categories.map((cat) => (

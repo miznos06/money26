@@ -14,6 +14,12 @@ export default function PostDetail() {
       setPost(res);
     });
   }, [id]);
+  
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} | 資産形成の実践`;
+    }
+  }, [post]);
 
   if (!post) return <div>Loading...</div>;
 
