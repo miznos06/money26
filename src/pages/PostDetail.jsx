@@ -14,7 +14,7 @@ export default function PostDetail() {
       setPost(res);
     });
   }, [id]);
-  
+
   useEffect(() => {
     if (post) {
       document.title = `${post.title} | 資産形成の実践`;
@@ -27,7 +27,7 @@ export default function PostDetail() {
     <div style={{ maxWidth: "800px", margin: "40px auto", padding: "20px" }}>
       <h1>{post.title}</h1>
       <div
-        dangerouslySetInnerHTML={{ __html: post.content }}
+        dangerouslySetInnerHTML={{ __html: post.body }}
       />
     </div>
   );
