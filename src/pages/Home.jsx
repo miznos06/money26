@@ -5,6 +5,10 @@ import { client } from "../lib/microcms";
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const [categories, setCategories] = useState([]);
+  
+　useEffect(() => {
+    document.title = "資産形成の実践 | 住宅・節約・投資の情報サイト";
+  }, []);
 
   useEffect(() => {
     client.get({ endpoint: "posts" }).then((res) => {
